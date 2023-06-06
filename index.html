@@ -9,7 +9,6 @@
       rel="stylesheet"
       href="node_modules/modern-normalize/modern-normalize.css"
     />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -87,6 +86,80 @@
         <div class="backdrop is-hidden" data-modal="">
           <div class="modal">
             <button class="modal-form" data-modal-close>X</button>
+            <h3 class="text-modal">
+              Deje sus datos, nos contactaremos con usted
+            </h3>
+
+            <form class="form">
+              <label class="input-name" for="input-name"> Nombre </label>
+
+              <div class="modal-form-input-group">
+                <input
+                  class="modal-form-input"
+                  type="text"
+                  name="name"
+                  id="input-name"
+                  required
+                />
+                <svg class="modal-form-svg">
+                  <use href="./images/icons.svg#icon-user"></use>
+                </svg>
+              </div>
+
+              <label class="input-tel" for="input-tel">Teléfono</label>
+              <div class="modal-form-input-group">
+                <input
+                  class="modal-form-input"
+                  type="text"
+                  name="tel"
+                  id="input-tel"
+                  required
+                />
+                <svg class="modal-form-svg">
+                  <use href="./images/icons.svg#icon-telform"></use>
+                </svg>
+              </div>
+
+              <label class="input-mail" for="input-mail">E-mail</label>
+              <div class="modal-form-input-group">
+                <input
+                  class="modal-form-input"
+                  type="text"
+                  name="mail"
+                  id="input-mail"
+                  required
+                />
+                <svg class="modal-form-svg">
+                  <use href="./images/icons.svg#icon-mailform"></use>
+                </svg>
+              </div>
+
+              <label class="input-coments" for="input-coments"
+                >Comentarios</label
+              >
+              <div class="modal-form-input-group">
+                <textarea
+                  class="modal-form-input-coments"
+                  name="coments"
+                  rows="8"
+                  placeholder="Introduzca el texto"
+                ></textarea>
+              </div>
+
+              <label for="terms" class="checkbox">
+                <input
+                  class="terms"
+                  type="checkbox"
+                  name="terms"
+                  value="agree"
+                  id="terms"
+                  checked
+                />Estoy de acuerdo con el boletín informativo y acepto los
+                Términos y Condiciones
+              </label>
+
+              <button class="submit-button" type="submit">Enviar</button>
+            </form>
           </div>
         </div>
 
