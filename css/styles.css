@@ -100,10 +100,10 @@ a {
 h3 {
   display: block;
   font-size: 1.5em;
-  margin-block-start: 0.83em;
-  margin-block-end: 0.83em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  /* margin-block-start: 0.83em; */
+  /* margin-block-end: 0.83em; */
+  /* margin-inline-start: 0px; */
+  /* margin-inline-end: 0px; */
   font-weight: bold;
   text-transform: lowercase;
 }
@@ -354,6 +354,9 @@ header li .icon-mailbox {
 .modal {
   width: 528px;
   height: 581px;
+  margin-top: 3%;
+  /* top: 5px; */
+  /* bottom: 15px; */
 
   background: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -362,12 +365,17 @@ header li .icon-mailbox {
 }
 
 .hero-bg-hero .modal-form {
+  position: relative;
+
+  /* top: 100px;
+  right: 8px;
+  left: 996px; */
   width: 30px;
   height: 30px;
   box-sizing: border-box;
   border-radius: 20px;
   cursor: pointer;
-  margin: 8px 8px 8px 490px;
+  margin: 1px 1px 2px 490px;
   background: var(--primary-white-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   transform: translateY(0);
@@ -380,6 +388,10 @@ header li .icon-mailbox {
 /* -------------------------------content of modal--------------------------------------------------- */
 
 .text-modal {
+  display: flex;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 40px;
   height: 23px;
   font-size: 20px;
   letter-spacing: 0.03 em;
@@ -389,7 +401,11 @@ header li .icon-mailbox {
 }
 
 .form {
-  cursor: pointer;
+  position: absolute;
+  width: 528px;
+  height: 581px;
+  /* cursor: pointer; */
+  /* background-color: red; */
 }
 
 .input-name {
@@ -401,6 +417,8 @@ header li .icon-mailbox {
   line-height: 14px;
   letter-spacing: 0.01em;
   padding-left: 41px;
+  padding-bottom: 4px;
+  padding-top: 36px;
   color: #757575;
   text-transform: none;
 }
@@ -414,6 +432,8 @@ header li .icon-mailbox {
   line-height: 14px;
   letter-spacing: 0.01em;
   padding-left: 41px;
+  padding-bottom: 4px;
+  padding-top: 10px;
   color: #757575;
   text-transform: none;
 }
@@ -427,6 +447,8 @@ header li .icon-mailbox {
   line-height: 14px;
   letter-spacing: 0.01em;
   padding-left: 41px;
+  padding-bottom: 4px;
+  padding-top: 10px;
   color: #757575;
   text-transform: none;
 }
@@ -440,6 +462,8 @@ header li .icon-mailbox {
   line-height: 20px;
   letter-spacing: 0.01em;
   padding-left: 41px;
+  padding-bottom: 4px;
+  padding-top: 10px;
   color: #757575;
   text-transform: none;
 }
@@ -466,7 +490,7 @@ textarea {
   padding-left: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  background-color: #188ce8;
+  /* background-color: #188ce8; */
 }
 
 .modal-form-input-coments {
@@ -486,22 +510,15 @@ textarea {
 }
 
 .modal-form-svg {
-  display: flex;
-  /* flex-direction: row; */
-  /* align-items: left; */
-  /* position: absolute; */
+  position: absolute;
+  top: 14px;
+  bottom: 14px;
+  left: 55px;
+
   width: 12px;
   height: 12px;
-  /* padding-bottom: px; */
-  
-
-  /* top: 14px;
-  left: 50px; */
-  /* padding-left: 41px; */
-  ;
-  /* width: 100%; */
   fill: #212121;
-  background-color: greenyellow;
+  /* background-color: greenyellow; */
 }
 
 .modal-form-input:hover + .modal-form-svg,
@@ -512,16 +529,21 @@ textarea {
 .modal-form-input-group {
   position: relative;
   padding-left: 41px;
-  padding-bottom: 15px;
+  /* padding-bottom: 10px; */
 
-  background-color: red;
+  /* background-color: red; */
 }
 
 .terms {
-  line-height: 5px;
-  letter-spacing: ;
-}
+  /* position: relative; */
+  /* position: absolute; */
+  /* top: 20px; */
+  /* width: 400px; */
+  /* background-color: red; */
 
+  line-height: 5px;
+  letter-spacing: 0.03em;
+}
 
 .checkbox {
   display: block;
@@ -534,15 +556,19 @@ textarea {
   font-weight: normal;
   letter-spacing: 0.03em;
   text-align: left;
+  padding-top: 20px;
+
+  /* background-color: orange; */
 }
 
-.submit-buttom {
+.submit-button {
   width: 200px;
   height: 50px;
   margin: 6px 124px 40px 124px;
 
   background-color: #188ce8;
   color: var(--primary-white-color);
+  cursor: pointer;
 
   letter-spacing: 0.06em;
   font-family: "Roboto";
@@ -554,7 +580,6 @@ textarea {
   outline: none;
   text-transform: capitalize;
 
-  cursor: pointer;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
@@ -583,7 +608,6 @@ textarea {
 }
 
 .benefits .benef-l .title-benefits {
-  height: 50px;
   text-transform: uppercase;
   color: var(--primary-black-color);
   padding-top: 30px;
@@ -1204,6 +1228,24 @@ ul li:hover {
   margin-bottom: 10px;
 }
 
+.footer2 {
+  margin-top: 62px;
+}
+
+.footer-logo2 {
+  width: 275px;
+  height: 16px;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-left: 1px;
+  margin-bottom: 20px;
+}
+
 .button {
   font-family: "Roboto";
   font-weight: 700;
@@ -1226,6 +1268,132 @@ ul li:hover {
   background-color: var(--accent-color);
 }
 
+/* --------------------------part of box for email in the footerr */
+
+.input-mailfoot {
+  display: flex;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  /* padding-left: 4px; */
+  padding-bottom: 4px;
+  padding-top: 1px;
+  /* color: #757575; */
+  text-transform: none;
+}
+
+.modal-form-input-groupfoot {
+  position: relative;
+  padding-left: px;
+  /* padding-bottom: 10px; */
+
+  /* background-color: red; */
+}
+
+.modal-form-inputfoot {
+  display: block;
+  outline: none;
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 101px;
+  box-sizing: border-box;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  background-color: var(--backgrount-black);
+}
+
+.modal-form-input-groupfoot:hover,
+.modal-form-input-groupfoot:focus {
+  border: 1px solid #2196f3;
+}
+
+/* ----------------------------box suscribirme in the fotterrr whit the airplain  */
+
+/* .submit-buttonfoot {
+  width: 200px;
+  height: 50px;
+  margin: 6px 124px 40px 124px;
+
+  background-color: #188ce8;
+  color: var(--primary-white-color);
+  cursor: pointer;
+
+  letter-spacing: 0.06em;
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  text-transform: capitalize;
+  
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+} */
+
+.button-suscript {
+  position: relative;
+}
+
+.button-foot {
+  position: absolute;
+  left: 365px;
+  bottom: 0px;
+
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  text-transform: capitalize;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  line-height: 1.8;
+  letter-spacing: 0, 06em;
+  /* align-items: center; */
+  /* text-align: center; */
+  width: 200px;
+  height: 50px;
+  padding: 10px;
+}
+
+.button-foot:hover {
+  color: var(--button-primary-hover);
+}
+
+.modal-form-svgfoot {
+  position: absolute;
+  top: px;
+  bottom: 19px;
+  left: 520px;
+
+  width: 12px;
+  height: 12px;
+  fill: #212121;
+  /* background-color: greenyellow; */
+}
+
+.modal-form-inputfoot:hover + .modal-form-svgfoot,
+.modal-form-inputfoot:focus + .modal-form-svgfoot {
+  fill: #2196f3;
+}
+
 /* --------------------------icons in the footer----------------- */
 
 footer .footer1 .social-red {
@@ -1233,7 +1401,7 @@ footer .footer1 .social-red {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  padding: 10px 120px;
+  padding: 20px 120px;
 }
 
 footer .footer1 .social-red li {
