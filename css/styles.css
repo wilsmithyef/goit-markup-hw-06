@@ -98,14 +98,38 @@ a {
 }
 
 h3 {
-  display: block;
+  /* padding: 30px; 0;
+  padding-top: 94px;
+  font-family: "Roboto"
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-heght: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-black-color) */
+
   font-size: 1.5em;
+  font-weight: bold;
+  text-transform: lowercase;
+
+  /* display: block; */
   /* margin-block-start: 0.83em; */
   /* margin-block-end: 0.83em; */
   /* margin-inline-start: 0px; */
   /* margin-inline-end: 0px; */
-  font-weight: bold;
-  text-transform: lowercase;
+}
+
+h5 {
+  padding-top: 94px;
+  font-family: "roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  /* line-heght: 40px; */
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-black-color);
 }
 
 .no-top-padding {
@@ -355,30 +379,35 @@ header li .icon-mailbox {
   width: 528px;
   height: 581px;
   margin-top: 3%;
-  /* top: 5px; */
-  /* bottom: 15px; */
+
+  left: 536px;
+  top: 221px;
 
   background: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+
+  /* background-color: #2196f3; */
+  /* padding-top: 11px; */
+  /* top: 20px; */
+  /* border-top: 20px; */
 }
 
 .hero-bg-hero .modal-form {
-  position: absolute;
-
-  right: 8px;
-  left: 490px;
+  /* position: relative; */
 
   width: 30px;
   height: 30px;
   box-sizing: border-box;
   border-radius: 20px;
   cursor: pointer;
-  margin: 1px 1px 2px 490px;
+  margin: 8px 8px 8px 490px;
   background: var(--primary-white-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   transform: translateY(0);
+
+  /* background-color: yellowgreen; */
 }
 
 .modal-form .is-hidden {
@@ -388,24 +417,21 @@ header li .icon-mailbox {
 /* -------------------------------content of modal--------------------------------------------------- */
 
 .text-modal {
-  display: flex;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 40px;
   height: 23px;
   font-size: 20px;
   letter-spacing: 0.03 em;
   color: #212121;
   text-transform: none;
-  line-height: 40px;
+  line-height: 23px;
+  padding: 0;
+
+  /* background-color: red; */
 }
 
 .form {
   position: absolute;
   width: 528px;
   height: 581px;
-  /* cursor: pointer; */
-  /* background-color: red; */
 }
 
 .input-name {
@@ -418,7 +444,7 @@ header li .icon-mailbox {
   letter-spacing: 0.01em;
   padding-left: 41px;
   padding-bottom: 4px;
-  padding-top: 36px;
+  padding-top: 12px;
   color: #757575;
   text-transform: none;
 }
@@ -760,7 +786,7 @@ textarea {
   height: 42px;
   color: var(--primary-black-color);
   padding-top: 94px;
-  padding-bottom: 50px;
+  padding-bottom: 80px;
   /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2); */
 }
